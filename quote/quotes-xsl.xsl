@@ -3,8 +3,10 @@
   <xsl:output method="text" encoding="UTF-8" />
  
   <xsl:template match="*">
- 
+    <!-- Sample string -->
     <xsl:variable name="aString">Translate():___'___'__"___"__&#xa;</xsl:variable>
+    
+    <!-- Assign ' to the $quote variable. -->
     <xsl:variable name="quote">'</xsl:variable>
  
     <!-- Replace ' with V. -->
