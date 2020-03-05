@@ -9,12 +9,12 @@
     <!-- Assign ' to the $quote variable. -->
     <xsl:variable name="quote">'</xsl:variable>
  
-    <!-- Replace ' with V. -->
+    <!-- Replace single quote with V. -->
     <xsl:value-of select="translate($aString, $quote, 'V')"/> 
     
         <!-- Display text if $aString contains '. -->
         <xsl:if test="contains($aString, $quote)">
-          <xsl:text>Found ' in contains().&#xa;&#xa;</xsl:text>
+          <xsl:text>Found sing quote(') in contains() function.&#xa;&#xa;</xsl:text>
         </xsl:if>
  
     <!-- Replace double quotes with V. -->
@@ -22,14 +22,14 @@
  
         <!-- Display text if $aString contains ". -->
         <xsl:if test='contains($aString, "&apos;")'>
-          <xsl:text>Use quote between quotes: Used in contains()&#xa;&#xa;</xsl:text>
+          <xsl:text>Found double quote(") in contains() function.&#xa;&#xa;</xsl:text>
         </xsl:if>
  
     <!-- Use &quot; instead of $quote variable. -->
     <xsl:value-of select="translate($aString, &quot;'&quot;, 'D')"/>
  
         <xsl:if test="contains($aString, &quot;'&quot;)">
-          <xsl:text>Use &amp;quot; instead of $quote in contains()&#xa;&#xa;</xsl:text>
+          <xsl:text>Use &amp;quot; instead of $quote in contains() function.&#xa;&#xa;</xsl:text>
         </xsl:if>
     
   </xsl:template>
