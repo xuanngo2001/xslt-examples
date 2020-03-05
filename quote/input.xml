@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <textarea name="123'_a">apostrophe: 123'_a</textarea>
+  <textarea name="123">b</textarea>
+  <textarea name="123">a</textarea>
+  <textarea name="123'_&quot;_a">apostrophe and quote: 123'_&quot;_a</textarea>
+  <textarea name="123345">c</textarea>
+  <textarea name="555">a</textarea>    
+</root>
