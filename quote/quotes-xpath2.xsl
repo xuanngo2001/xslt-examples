@@ -18,6 +18,13 @@
       <xsl:text>&#xa;&#xa;</xsl:text>
     </xsl:for-each>
     
+    <!-- Select textarea who's name is 123'_"_a -->
+    <xsl:for-each select="//textarea[@name='123&quot;'&quot;']">
+      <xsl:text>Found </xsl:text>
+      <xsl:value-of select="."/>
+      <xsl:text>&#xa;&#xa;</xsl:text>
+    </xsl:for-each>
+    
   </xsl:template>
   
 </xsl:stylesheet>
